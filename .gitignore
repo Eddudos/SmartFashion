@@ -46,6 +46,7 @@ nodeLanguageServer.*/**
 dist/**
 # translation files
 __pycache__
+.vscode
 dependencies
 pythonVirtualEnvironment
 **/RGBDAcquisition
