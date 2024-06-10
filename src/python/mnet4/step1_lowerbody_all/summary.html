@@ -1,0 +1,66 @@
+
+                       <html>
+                       <head>
+                         <meta charset="UTF-8">
+                         <title>Training summary of experiment 314 for lowerbody </title>
+                       </head>
+                       <body>
+                       ammar-forth<br>
+
+                       <table border=1>
+                         <tr>
+                           <td>Date</td>
+                           <td>Part</td>
+                           <td>BatchSize</td>
+                           <td>Epochs</td>
+                           <td>&lambda;</td>
+                           <td>Remember</td>
+                           <td>Occlusions</td>
+                           <td>Input Processing</td>
+                           <td>Hard Mining</td>
+                         </tr>
+                         <tr>
+                           <td>11/09/2023</td>
+                           <td>lowerbody</td>
+                           <td>64</td>
+                           <td>128/256/512</td>
+                           <td>0.18</td>
+                           <td>c 1/p 0</td>
+                           <td>0</td>
+                           <td> eNSRM NSRMNormalizeAnglesFull act(swish) rand(auto) adam novis2Dflag</td>
+                           <td></td>
+                         </tr>
+                       </table>
+                    
+                       <table border=1>
+                         <tr>
+                           <td>Serial</td>
+                           <td>Start</td>
+                           <td>End</td>
+                           <td>Training Samples</td>
+                           <td>Model Size</td>
+                           <td>Dropout/L.R</td>
+                           <td>Description</td>
+                         </tr>
+                         <tr>
+                           <td>314</td>
+                           <td>0</td>
+                           <td>45</td>
+                           <td>3384693</td>
+                           <td>3498898</td>
+                           <td>0.18/0.00010</td>
+                           <td>group 0 balanced offset outputNormalizationStrategy=normalize outputScaling=1.50 NNDepth=12</td>
+                         </tr>
+                       </table>
+                       <table border=1>
+                             <tr>
+                                <td>Joint</td>
+                                <td>R² / Start Loss / M.A.E</td>
+                                <td>R² / End Loss / M.A.E</td>
+                                <td>Tr.Epochs</td> 
+                                <td>Min/Max</td>
+                                <td>Offset</td>
+                                <td>Scalar</td>
+                                <td>Scalar Fr.</td>
+                             </tr>
+                    <tr><td>everything</td><td>R² -266.17/0.0576/0.1105 - 7.0620/0.4178</td><td>R² 0.99/0.0275/0.0758 - 7.0546/0.4090</td><td>3</td><td>0.0000/0.0000</td><td>0.0000</td><td>1.0000</td><td>1.0000</td></tr>

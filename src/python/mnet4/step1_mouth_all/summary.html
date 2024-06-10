@@ -1,0 +1,66 @@
+
+                       <html>
+                       <head>
+                         <meta charset="UTF-8">
+                         <title>Training summary of experiment 299B for mouth </title>
+                       </head>
+                       <body>
+                       ammar-forth<br>
+
+                       <table border=1>
+                         <tr>
+                           <td>Date</td>
+                           <td>Part</td>
+                           <td>BatchSize</td>
+                           <td>Epochs</td>
+                           <td>&lambda;</td>
+                           <td>Remember</td>
+                           <td>Occlusions</td>
+                           <td>Input Processing</td>
+                           <td>Hard Mining</td>
+                         </tr>
+                         <tr>
+                           <td>16/07/2023</td>
+                           <td>mouth</td>
+                           <td>32</td>
+                           <td>16/24/32</td>
+                           <td>1.40</td>
+                           <td>c 1/p 0</td>
+                           <td>0</td>
+                           <td> eNSRM NSRMNormalizeAnglesFull act(swish) rand(auto) adam novis2Dflag</td>
+                           <td></td>
+                         </tr>
+                       </table>
+                    
+                       <table border=1>
+                         <tr>
+                           <td>Serial</td>
+                           <td>Start</td>
+                           <td>End</td>
+                           <td>Training Samples</td>
+                           <td>Model Size</td>
+                           <td>Dropout/L.R</td>
+                           <td>Description</td>
+                         </tr>
+                         <tr>
+                           <td>299B</td>
+                           <td>0</td>
+                           <td>44</td>
+                           <td>1048575</td>
+                           <td>238165</td>
+                           <td>0.25/0.00017</td>
+                           <td>group 1 balanced offset outputNormalizationStrategy=normalize outputScaling=2.50 NNDepth=12</td>
+                         </tr>
+                       </table>
+                       <table border=1>
+                             <tr>
+                                <td>Joint</td>
+                                <td>R² / Start Loss / M.A.E</td>
+                                <td>R² / End Loss / M.A.E</td>
+                                <td>Tr.Epochs</td> 
+                                <td>Min/Max</td>
+                                <td>Offset</td>
+                                <td>Scalar</td>
+                                <td>Scalar Fr.</td>
+                             </tr>
+                    <tr><td>hip_Xposition</td><td>R² -0.03/0.2242/0.0292</td><td>R² 0.99/0.0063/0.0060</td><td>15</td><td>-0.2400/0.2400</td><td>0.0000</td><td>10.4167</td><td>0.0960</td></tr><tr><td>hip_Yposition</td><td>R² -1.02/0.2130/0.0126</td><td>R² 0.97/0.0149/0.0039</td><td>13</td><td>-0.1000/0.1000</td><td>0.0000</td><td>25.0000</td><td>0.0400</td></tr><tr><td>hip_Zposition</td><td>R² -0.89/0.0654/0.0461</td><td>R² 0.97/0.0078/0.0170</td><td>15</td><td>-2.3000/-1.0000</td><td>-1.6500</td><td>3.8462</td><td>0.2600</td></tr><tr><td>neck1_Zrotation</td><td>R² -0.03/0.2047/2.3291</td><td>R² 0.99/0.0070/0.5227</td><td>16</td><td>-20.0000/20.0000</td><td>0.0000</td><td>0.1250</td><td>8.0000</td></tr><tr><td>neck1_Xrotation</td><td>R² -0.94/0.0530/1.2706</td><td>R² 0.98/0.0070/0.5156</td><td>8</td><td>-20.0000/20.0000</td><td>0.0000</td><td>0.1250</td><td>8.0000</td></tr><tr><td>neck1_Yrotation</td><td>R² -0.92/0.1994/2.0695</td><td>R² 0.93/0.0196/0.7581</td><td>6</td><td>-20.0000/20.0000</td><td>0.0000</td><td>0.1250</td><td>8.0000</td></tr><tr><td>eye.R_Zrotation</td><td>0.0000/0.0000</td><td>0.0000/0.0000</td><td>0</td><td>0.0000/0.0000</td><td>0.0000</td><td>2.5000</td><td>0.4000</td></tr><tr><td>eye.R_Xrotation</td><td>0.0000/0.0000</td><td>0.0000/0.0000</td><td>0</td><td>0.0000/0.0000</td><td>0.0000</td><td>2.5000</td><td>0.4000</td></tr><tr><td>eye.L_Zrotation</td><td>0.0000/0.0000</td><td>0.0000/0.0000</td><td>0</td><td>0.0000/0.0000</td><td>0.0000</td><td>2.5000</td><td>0.4000</td></tr><tr><td>eye.L_Xrotation</td><td>0.0000/0.0000</td><td>0.0000/0.0000</td><td>0</td><td>0.0000/0.0000</td><td>0.0000</td><td>2.5000</td><td>0.4000</td></tr><tr><td>oculi01.R_Zrotation</td><td>0.0000/0.0000</td><td>0.0000/0.0000</td><td>0</td><td>0.0000/0.0000</td><td>0.0000</td><td>2.5000</td><td>0.4000</td></tr><tr><td>oculi01.L_Zrotation</td><td>0.0000/0.0000</td><td>0.0000/0.0000</td><td>0</td><td>0.0000/0.0000</td><td>0.0000</td><td>2.5000</td><td>0.4000</td></tr><tr><td>orbicularis03.R_Xrotation</td><td>0.0000/0.0000</td><td>0.0000/0.0000</td><td>0</td><td>0.0000/0.0000</td><td>0.0000</td><td>2.5000</td><td>0.4000</td></tr><tr><td>orbicularis04.R_Xrotation</td><td>0.0000/0.0000</td><td>0.0000/0.0000</td><td>0</td><td>-0.0000/-0.0000</td><td>-0.0000</td><td>2.5000</td><td>0.4000</td></tr><tr><td>orbicularis03.L_Xrotation</td><td>0.0000/0.0000</td><td>0.0000/0.0000</td><td>0</td><td>0.0000/0.0000</td><td>0.0000</td><td>2.5000</td><td>0.4000</td></tr><tr><td>orbicularis04.L_Xrotation</td><td>0.0000/0.0000</td><td>0.0000/0.0000</td><td>0</td><td>-0.0000/-0.0000</td><td>-0.0000</td><td>2.5000</td><td>0.4000</td></tr><tr><td>levator06.L_Xrotation</td><td>R² -0.00/2.0834/4.5000</td><td>R² 0.00/2.0834/4.5000</td><td>1</td><td>-9.0000/9.0000</td><td>0.0000</td><td>0.2778</td><td>3.6000</td></tr><tr><td>levator06.R_Xrotation</td><td>R² -0.03/2.0834/4.5001</td><td>R² 0.00/2.0834/4.5000</td><td>3</td><td>-9.0000/9.0000</td><td>0.0000</td><td>0.2778</td><td>3.6000</td></tr><tr><td>levator03.L_Zrotation</td><td>R² -0.28/2.0836/4.2502</td><td>R² 0.00/2.0833/4.2500</td><td>2</td><td>-8.0000/9.0000</td><td>0.5000</td><td>0.2941</td><td>3.4000</td></tr><tr><td>levator03.R_Zrotation</td><td>R² -0.01/0.5569/1.8883</td><td>R² 0.97/0.0222/0.3943</td><td>29</td><td>-9.0000/8.0000</td><td>-0.5000</td><td>0.2941</td><td>3.4000</td></tr><tr><td>oris03.L_Zrotation</td><td>R² -0.20/2.0835/15.0003</td><td>R² 0.00/2.0834/15.0000</td><td>3</td><td>-30.0000/30.0000</td><td>0.0000</td><td>0.0833</td><td>12.0000</td></tr><tr><td>oris07.L_Zrotation</td><td>R² -0.01/1.5268/6.1943</td><td>R² 0.93/0.1405/1.7530</td><td>17</td><td>-30.0000/-0.0000</td><td>-15.0000</td><td>0.1667</td><td>6.0000</td></tr><tr><td>oris03.R_Zrotation</td><td>R² -0.24/2.0837/15.0007</td><td>R² 0.00/2.0834/15.0000</td><td>2</td><td>-30.0000/30.0000</td><td>0.0000</td><td>0.0833</td><td>12.0000</td></tr><tr><td>oris07.R_Zrotation</td><td>R² -0.38/2.0837/7.5005</td><td>R² -0.00/2.0833/7.5000</td><td>1</td><td>-30.0000/-0.0000</td><td>-15.0000</td><td>0.1667</td><td>6.0000</td></tr><tr><td>jaw_Xrotation</td><td>R² -0.01/0.1820/1.2361</td><td>R² 0.98/0.0035/0.2226</td><td>15</td><td>-4.0000/20.0000</td><td>8.0000</td><td>0.2083</td><td>4.8000</td></tr><tr><td>jaw_Yrotation</td><td>R² -0.97/0.0412/0.8528</td><td>R² 0.94/0.0060/0.3389</td><td>13</td><td>-15.0000/15.0000</td><td>0.0000</td><td>0.1667</td><td>6.0000</td></tr><tr><td>oris04.L_Zrotation</td><td>R² -0.22/0.9311/4.4855</td><td>R² 0.99/0.0232/0.7086</td><td>26</td><td>-30.0000/-0.0000</td><td>-15.0000</td><td>0.1667</td><td>6.0000</td></tr><tr><td>oris04.R_Zrotation</td><td>R² -0.11/2.0835/7.5002</td><td>R² -0.00/2.0833/7.5000</td><td>2</td><td>0.0000/30.0000</td><td>15.0000</td><td>0.1667</td><td>6.0000</td></tr><tr><td>oris06.L_Zrotation</td><td>R² -0.44/0.3318/4.7986</td><td>R² 1.00/0.0094/0.9126</td><td>22</td><td>-30.0000/30.0000</td><td>0.0000</td><td>0.0833</td><td>12.0000</td></tr><tr><td>oris06.R_Zrotation</td><td>R² -0.03/0.4053/5.6892</td><td>R² 0.98/0.0182/1.2682</td><td>29</td><td>-30.0000/30.0000</td><td>0.0000</td><td>0.0833</td><td>12.0000</td></tr><tr><td>orbicularis03.R_Yrotation</td><td>0.0000/0.0000</td><td>0.0000/0.0000</td><td>0</td><td>172.0000/172.0000</td><td>172.0000</td><td>2.5000</td><td>0.4000</td></tr><tr><td>orbicularis04.R_Yrotation</td><td>0.0000/0.0000</td><td>0.0000/0.0000</td><td>0</td><td>172.0000/172.0000</td><td>172.0000</td><td>2.5000</td><td>0.4000</td></tr><tr><td>orbicularis03.L_Yrotation</td><td>0.0000/0.0000</td><td>0.0000/0.0000</td><td>0</td><td>-172.0000/-172.0000</td><td>-172.0000</td><td>2.5000</td><td>0.4000</td></tr><tr><td>orbicularis04.L_Yrotation</td><td>0.0000/0.0000</td><td>0.0000/0.0000</td><td>0</td><td>172.0000/172.0000</td><td>172.0000</td><td>2.5000</td><td>0.4000</td></tr><tr><td>levator06.L_Yrotation</td><td>0.0000/0.0000</td><td>0.0000/0.0000</td><td>0</td><td>-247.0000/-247.0000</td><td>-247.0000</td><td>2.5000</td><td>0.4000</td></tr><tr><td>levator06.R_Yrotation</td><td>0.0000/0.0000</td><td>0.0000/0.0000</td><td>0</td><td>247.0000/247.0000</td><td>247.0000</td><td>2.5000</td><td>0.4000</td></tr><tr><td>oris03.L_Xrotation</td><td>0.0000/0.0000</td><td>0.0000/0.0000</td><td>0</td><td>-40.0000/-40.0000</td><td>-40.0000</td><td>2.5000</td><td>0.4000</td></tr><tr><td>oris03.L_Yrotation</td><td>0.0000/0.0000</td><td>0.0000/0.0000</td><td>0</td><td>172.0000/172.0000</td><td>172.0000</td><td>2.5000</td><td>0.4000</td></tr><tr><td>oris07.L_Yrotation</td><td>0.0000/0.0000</td><td>0.0000/0.0000</td><td>0</td><td>172.0000/172.0000</td><td>172.0000</td><td>2.5000</td><td>0.4000</td></tr><tr><td>oris03.R_Xrotation</td><td>0.0000/0.0000</td><td>0.0000/0.0000</td><td>0</td><td>-40.0000/-40.0000</td><td>-40.0000</td><td>2.5000</td><td>0.4000</td></tr><tr><td>oris03.R_Yrotation</td><td>0.0000/0.0000</td><td>0.0000/0.0000</td><td>0</td><td>179.0000/179.0000</td><td>179.0000</td><td>2.5000</td><td>0.4000</td></tr><tr><td>oris07.R_Yrotation</td><td>0.0000/0.0000</td><td>0.0000/0.0000</td><td>0</td><td>172.0000/172.0000</td><td>172.0000</td><td>2.5000</td><td>0.4000</td></tr><tr><td>oris05_Xrotation</td><td>0.0000/0.0000</td><td>0.0000/0.0000</td><td>0</td><td>-35.0000/-35.0000</td><td>-35.0000</td><td>2.5000</td><td>0.4000</td></tr><tr><td>oris05_Yrotation</td><td>0.0000/0.0000</td><td>0.0000/0.0000</td><td>0</td><td>-176.0000/-176.0000</td><td>-176.0000</td><td>2.5000</td><td>0.4000</td></tr>
